@@ -1,9 +1,9 @@
 ---
-title: 03. Opening A Door
+title: 03. Opening a Door
 parent: Basics
 ---
 
-# 03. Opening A Door
+# 03. Opening a Door
 
 Using **Unity 2021.3.27f1** and **Visual Scripting 1.8.0**. The project is using the **2D Core** template.
 
