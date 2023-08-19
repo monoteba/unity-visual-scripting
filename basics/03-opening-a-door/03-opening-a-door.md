@@ -9,7 +9,7 @@ Using **Unity 2021.3.27f1** and **Visual Scripting 1.8.0**. The project is using
 
 ![Demo](./demo.gif)
 
-In this example, we will send a **Custom Event** from the button to the door, which switches the door between being open and closed.
+In this example, we will send a **Custom Event** from the button to the door, which switches the door between being open and closed. An event is some occurrence in the system that other parts of the system can respond to. A real-world analogy would be you taking your pasta off the stove (the response) when an alarm clock rings (the event).
 
 Create a new **Script Graph** for the door and create two **Graph** variables as well as one **Object** variable that we can adjust in the Inspector.
 
