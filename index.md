@@ -1,5 +1,5 @@
 ---
-title: Graph Examples
+title: Home
 has_toc: true
 nav_order: 1
 description: A collection of relatively small Visual Scripting graph examples for use with Unity 2021 and later.
