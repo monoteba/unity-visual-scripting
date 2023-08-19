@@ -1,5 +1,13 @@
 ---
-title: Overview
+title: Visual Scripting Graphs
+has_toc: true
+nav_order: 1
+description: A collection of relatively small Visual Scripting graph examples for use with Unity 2021 and later.
 ---
 
-This is a collection of relatively small Visual Scripting graph examples for use with Unity 2021 and later. Some of the graphs may be very similar to the Bolt flows in Unity 2020 and earlier, though minor differences exist.
+# Visual Scripting Graphs
+
+{: .note}
+Some of the graphs may be very similar to the Bolt flows in Unity 2020 and earlier, though minor differences exist.
+
+
