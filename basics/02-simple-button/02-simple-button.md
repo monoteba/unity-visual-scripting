@@ -29,4 +29,4 @@ For this graph, set up three **Graph** variables:
 
 Finally, the **On Trigger Enter/Exit 2D** events check if it is a GameObject tagged *Player* that has entered or exited. If so, the `isPlayerOnButton` variable is set to `true` or `false` respectively.
 
-![Graph](./graph.jpg)
+[![Graph](./graph.jpg)](./graph.jpg)

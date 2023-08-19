@@ -30,4 +30,4 @@ When detecting button presses, you generally should be using **Update** rather t
 
 The reason why detecting input here is acceptable, is because we are *continuously* checking the state of moving the character, and the character is only asked to move in **Fixed Update** anyway.
 
-![Graph](./graph.jpg)
+[![Graph](./graph.jpg)](./graph.jpg)
