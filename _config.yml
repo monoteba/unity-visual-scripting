@@ -2,5 +2,3 @@ markdown: GFM
 remote_theme: just-the-docs/just-the-docs
 title: Unity Visual Scripting Examples
 description: Collection of small examples of Visual Scripting graphs for Unity.
-header_pages:
-  -
