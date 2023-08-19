@@ -1,4 +1,4 @@
 markdown: GFM
-theme: jekyll-theme-minimal
+theme: minima
 title: Unity Visual Scripting Examples
-description: Collection of small examples of Visual Scripting graphs for Unity
+description: Collection of small examples of Visual Scripting graphs for Unity.
