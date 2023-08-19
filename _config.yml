@@ -1,4 +1,4 @@
-markdown: GFM
+markdown: kramdown
 remote_theme: just-the-docs/just-the-docs
-title: Graph Examples for Unity Visual Scripting
+title: Graph Examples
 description: Collection of small examples of Visual Scripting graphs for Unity.
