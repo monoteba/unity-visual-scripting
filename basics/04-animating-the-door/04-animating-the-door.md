@@ -24,6 +24,8 @@ In addition, we add a **Graph** variable named `animationTime` of type `Float`. 
 
 A lot is going on in this graph, so take a deep breath, and let me try to walk you through it.
 
+[![Graph](./graph.jpg)](./graph.jpg)
+
 Starting from the top, the **On Start** simply sets the `animationTime` to the value of `animationDuration`. This makes our **On Update** flow stop at the first **If** node it encounters and prevents any movement. In other words, no animation is happening.
 
 The **Custom Event** now sets the `animationTime` to `0`. This has the effect of restarting the animation and starting from the beginning of the transition between open and closed. As you can see in the GIF above, the animation "jumps" when the player is pressing the button rapidly. This is because the animation always goes to zero and begins from either the open or closed position, before moving to its desired position.
@@ -39,5 +41,3 @@ The **Lerp Unclamped** node then takes the start and end position as inputs, tog
 ![Animation Curve](./animation-curve.jpg)
 
 The final piece of the puzzle, is to *evaluate* the **Animation Curve**. That means given some value along the X-axis (or time axis), the curve will *evaluate* to some value along the Y-axis. So we divide the `animationTime` with the `animationDuration` to get a percentage of how much the animation has progressed, and use this number to *evaluate* the curve along the X-axis - imagine time moving from left to right along the curve.
-
-[![Graph](./graph.jpg)](./graph.jpg)
