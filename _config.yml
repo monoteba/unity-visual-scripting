@@ -2,4 +2,4 @@ markdown: GFM
 theme: minima
 title: Unity Visual Scripting Examples
 description: Collection of small examples of Visual Scripting graphs for Unity.
-header_pages: 
+header_pages: null
