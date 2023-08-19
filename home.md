@@ -14,6 +14,6 @@ The examples assume that you have a basic knowledge of how to create and edit Sc
 
 The examples are not meant as a step-by-step guide, but rather simple graphs for you to study and learn from. I will provide necessary information where needed, like which components that are added to GameObjects, but not explain every node I use in detail. 
 
+---
+
 [^1]: Some of the graphs may be very similar to the Bolt flows in Unity 2020 and earlier, though differences do exist in naming.
-
-

@@ -1,7 +1,9 @@
 ---
-title: 02. Simple Button
+title: 02. A Button
 parent: Basics
 ---
+
+# 02. A Button
 
 Using **Unity 2021.3.27f1** and **Visual Scripting 1.8.0**. The project is using the **2D Core** template.
 
