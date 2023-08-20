@@ -5,7 +5,7 @@ parent: Basics
 
 # 03. Opening a Door
 
-Using **Unity 2021.3.27f1** and **Visual Scripting 1.8.0**. The project is using the **2D Core** template.
+> Using **Unity 2021.3.27f1** and **Visual Scripting 1.8.0**. The project is using the **2D Core** template.
 
 ![Demo](./demo.gif)
 
@@ -30,13 +30,13 @@ In the graph, we then use a **Custom Event** node that responds to an event call
 
 [![Door Graph](./door-graph.jpg)](./door-graph.jpg)
 
-For the button, we add an **Object** variable named `door`. We then assign our *door* GameObject to the button in the Inspector.
+For the button, we add an **Object** variable named `door`. We then assign our *door* game object to the button in the Inspector.
 
 ![Button Variables](./button-variables.jpg)
 
 ![Button Inspector](./button-inspector.jpg)
 
-Finally, we use a **Trigger Custom Event** node to send the `ToggleDoor` event to the *door* GameObject. The change in the button's graph from example 02 is highlighted in yellow.
+Finally, we use a **Trigger Custom Event** node to send the `ToggleDoor` event to the *door* game object. The change in the button's graph from example 02 is highlighted in yellow.
 
 *The Button Graph*
 
