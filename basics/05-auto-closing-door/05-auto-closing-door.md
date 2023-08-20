@@ -28,4 +28,6 @@ At the bottom of the graph is the new logic that will close the door after a cer
 
 **On Update** then use an **And** node to check if two *boolean expressions* are `true`. In other words, *if both A and B are true, then the output is true*. To be specific, if `isOpen` is `true` *and* if `closeTime` is greather than `closeDuration` then we trigger the custom event called `ToggleDoor`. If not, then we increment the `closeTime` variable by the *delta time* to make it behave like a timer.
 
+You may note that the button does not automatically switch color! I will leave it to you to figure out. **Hint:** You may use custom events :)
+
 [![Graph](./graph.jpg)](./graph.jpg)
