@@ -11,19 +11,19 @@ parent: Basics
 
 This example demonstrates how to activate and deactivate game objects as well as how to affect multiple objects using a *loop*.
 
-### Preparing the Diamond Trigger
+## Preparing the Diamond Trigger
 
 The scene is made up of a *trigger* that enables four diamonds when the player enters it. The trigger is shown below (note the thin green box next to the door). Make sure the **Is Trigger** property is set to `true` on the `BoxCollider2D` component.
 
 ![Diamond Trigger](./diamond-trigger.jpg)
 
-### Preparing the Diamonds
+## Preparing the Diamonds
 
 Each of the four diamonds are set up with a `CircleCollider2D`, which is also set to act like a trigger.
 
 ![Diamond Inspector](./diamond-inspector.jpg)
 
-### Creating the Diamond Trigger Graph
+## Creating the Diamond Trigger Graph
 
 Starting with the **DiamondTrigger**, create a new **Script Graph** that has an **List of Game Object** variable, which is an **Object** variable. Then assign each of the four **Diamond** game objects to the list on the **DiamondTrigger**.
 
@@ -35,7 +35,7 @@ We are then using a **For Each Loop** node to *iterate* over each of the game ob
 
 ![Diamond Trigger Inspector](./diamond-trigger-inspector.jpg)
 
-### Creating the Diamond Graph
+## Creating the Diamond Graph
 
 Now that we can enable all the diamonds when the player walks through the door, it is time to disable each of them when the player enters their trigger - as if the player is collecting diamonds!
 
