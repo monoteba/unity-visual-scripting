@@ -12,7 +12,7 @@ description: A collection of relatively small Visual Scripting graph examples fo
 
 The examples assume that you have a basic knowledge of how to create and edit Script Graphs in Unity's Visual Scripting. If you have never used Visual Scripting in Unity, I recommend that you find some introduction video.
 
-The examples are not meant as a step-by-step guide, but rather simple graphs for you to study and learn from. I will provide necessary information where needed, like which components that are added to GameObjects, but not explain every node I use in detail. 
+The examples are not meant as a step-by-step guide, but rather simple graphs for you to study and learn from. I will provide necessary information where needed, like which components that are added to game objects, but not explain every node I use in detail. 
 
 ---
 

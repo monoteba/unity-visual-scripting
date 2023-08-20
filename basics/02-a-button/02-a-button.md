@@ -9,7 +9,7 @@ parent: Basics
 
 ![Demo](./demo.gif)
 
-This example builds on the [01. Simple Player](../01-simple-player/01-simple-player) example, and demonstrates a simple button that switches between two colors.
+This example builds on the [01. A Simple Player](../01-a-simple-player/01-a-simple-player) example, and demonstrates a simple button that switches between two colors.
 
 Start by creating a game object with a sprite in a dark brown color. Add a `CircleCollider2D` component and set **Is Trigger** to `True`.
 
