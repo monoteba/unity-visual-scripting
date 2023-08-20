@@ -5,13 +5,13 @@ parent: Basics
 
 # 01. A Simple Player
 
-Using **Unity 2021.3.27f1** and **Visual Scripting 1.8.0**. The project is using the **2D Core** template.
+> Using **Unity 2021.3.27f1** and **Visual Scripting 1.8.0**. The project is using the **2D Core** template.
 
 ![Demo](./demo.gif)
 
 This example demonstrates a simple 2D player character that can be moved up, down, left and right. The player is using a rigid body so that it can collide with walls and other objects.
 
-Start by creating a new GameObject with a `Rigidbody2D` and `BoxCollider2D` component. 
+Start by creating a new game object with a `Rigidbody2D` and `BoxCollider2D` component. 
 
 On the `Rigidbody2D` set...
 
