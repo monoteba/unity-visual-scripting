@@ -13,7 +13,7 @@ In this example, we will send a **Custom Event** from the button to the door, wh
 
 Create a new **Script Graph** for the door and create two **Graph** variables as well as one **Object** variable that we can adjust in the Inspector.
 
-The two **Graph** variables should named...
+The two **Graph** variables should be named...
 
 - `isOpen` of type `Boolean`
 - `startPosition` of type `Vector3`
