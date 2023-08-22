@@ -42,3 +42,5 @@ Modify the logic where the *Player* previously released the *Key* to also includ
 [![Player Graph 2](./player-graph-2.jpg)](./player-graph-2.jpg)
 
 Right now, any *Key* can be used on any *Lock*. In the next example, we will look at how to restrict *Keys* to only work with certain *Locks*.
+
+As for opening a door, I will let you figure that out :)
