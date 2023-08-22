@@ -29,7 +29,7 @@ A `Boolean` is a type of data that can be either `true` or `false`. **Graph** va
 
 **On Start**, the button stores the initial color of the sprite, in order to toggle between its initial color and a "switched on" color defined in the graph.
 
-**On Update**, the button checks whether the `Jump` button has been pressed down. If so, the `isEnabled` variable is flipped from `true` to `false` and vice-versa. Based on the value of `isEnabled`, the button either sets its "on" or "off" color that we stored in the **On Start** flow.
+**On Update**, the button checks whether the `Jump` button has been pressed down. If so, the `isEnabled` variable is flipped from `true` to `false` and vice-versa. Based on the value of `isEnabled`, the button either sets its "on" or "off" color that we stored in the **On Start** flow. `Jump` by default maps to the *spacebar* or the *A* button on an Xbox controller. 
 
 Finally, the **On Trigger Enter/Exit 2D** events check if it is a game object tagged `Player` that has entered or exited the collider. If so, the `isPlayerOnButton` variable is set to `true` or `false` respectively.
 
