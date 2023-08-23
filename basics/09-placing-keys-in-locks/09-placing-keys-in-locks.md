@@ -23,6 +23,8 @@ The *Lock* *triggers* two custom events, `OnEnterLock` and `OnExitLock`, which w
 
 The *Lock* also *receives* a custom event, `OnUnlock`, which will be *triggered* by the *Player*. This flow will then receive the *Key* and set its position to the same as the *Lock* and disable the collider on the *Key* to prevent further interaction with it.
 
+Notice that we are using a **Flow** variable in the custom event flow. A **Flow** variable is a temporary variable that can only be accessed from the current flow. The variable must have been **Set** before it can be read using **Get Variable**. The main reason for using it here, is to prevent dragging long connections across the flow, which could become difficult to understand.
+
 [![Lock Graph](./lock-graph.png)](./lock-graph.png)
 
 ## The Player

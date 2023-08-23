@@ -45,4 +45,14 @@ The next piece of the *Player* logic, is to handle picking up and letting go of 
 
 The final piece of the *Player* logic we want to add, is the logic that moves the *Key* together with the *Player* whenever the *Player* is carrying a *Key*.
 
+We use **On Late Update** here because we want to ensure that the logic that moves the *Key* happens *after* we have moved the *Player*. In Unity, all *events* like **On Start**, **On Update** and **On Late Update** happen at specific times and in a specific order. The ones you will encounter most often happen in the follow order:
+
+1. **On Start** (only once)
+2. **On Enable** (any time a component or game object is enabled)
+3. **On Update** (every frame)
+4. **On Late Update** (every frame)
+5. **On Disable** (any time a component or game object is disabled)
+
+You can see the order of all Unity's event functions here: [https://docs.unity3d.com/Manual/ExecutionOrder.html](https://docs.unity3d.com/Manual/ExecutionOrder.html).
+
 [![Player Graph 3](./player-graph-3.jpg)](./player-graph-3.jpg)
