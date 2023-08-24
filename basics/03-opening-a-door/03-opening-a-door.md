@@ -20,24 +20,24 @@ The two **Graph** variables should be named...
 
 The **Object** variable should be named `openOffset` and be of type `Boolean`. In this example, the `openOffset` is set to a value of `X: 0`, `Y: -1.5`, `Z: 0`.
 
-![Door Variables](./door-variables.jpg)
+![Door Variables](./door-variables.webp)
 
-![Door Inspector](./door-inspector.jpg)
+![Door Inspector](./door-inspector.webp)
 
 In the graph, we then use a **Custom Event** node that responds to an event called `ToggleDoor`. We will *trigger* this event later from our button.
 
 *The Door Graph*
 
-[![Door Graph](./door-graph.jpg)](./door-graph.jpg)
+[![Door Graph](./door-graph.webp)](./door-graph.webp)
 
 For the button, we add an **Object** variable named `door`. We then assign our *door* game object to the button in the Inspector.
 
-![Button Variables](./button-variables.jpg)
+![Button Variables](./button-variables.webp)
 
-![Button Inspector](./button-inspector.jpg)
+![Button Inspector](./button-inspector.webp)
 
 Finally, we use a **Trigger Custom Event** node to send the `ToggleDoor` event to the *door* game object. The change in the button's graph from example 02 is highlighted in yellow.
 
 *The Button Graph*
 
-[![Button Graph](./button-graph.jpg)](./button-graph.jpg)
+[![Button Graph](./button-graph.webp)](./button-graph.webp)

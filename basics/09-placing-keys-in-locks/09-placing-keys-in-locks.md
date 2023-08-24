@@ -17,7 +17,7 @@ The first step is to create a new game object that will act as the *Lock*. The *
 
 The `BoxCollider2D` that detects when the *Player* is nearby should be larger than the *Lock* itself and set to be a trigger. The inner collider should simply match the graphics and **not** set as a trigger.
 
-![Lock Colliders](./lock-colliders.jpg)
+![Lock Colliders](./lock-colliders.webp)
 
 The *Lock* *triggers* two custom events, `OnEnterLock` and `OnExitLock`, which will be received by the *Player*.
 
@@ -31,17 +31,17 @@ Notice that we are using a **Flow** variable in the custom event flow. A **Flow*
 
 On the *Player* graph, add an additional **Graph** variable called `activeLock`. This is where we will store which *Lock* we are currently nearby.
 
-![Player Variables](./player-variables.jpg)
+![Player Variables](./player-variables.webp)
 
 The first thing to set up, are the two *event* receivers for `OnEnterLock` and `OnExitLock`. The `OnEnterLock` event will send a reference to the *Lock* so that we can later communicate with it.
 
-[![Player Graph 1](./player-graph-1.jpg)](./player-graph-1.jpg)
+[![Player Graph 1](./player-graph-1.webp)](./player-graph-1.webp)
 
 The second and last bit, is to *trigger* the `OnUnlock` event on the *Lock*, in case one is nearby. That is, if some *Lock* has sent an event to the *Player* about that they entered the *Lock's* trigger.
 
 Modify the logic where the *Player* previously released the *Key* to also include the event that potentially tells the *Lock* to unlock (the part highlighted in yellow).
 
-[![Player Graph 2](./player-graph-2.jpg)](./player-graph-2.jpg)
+[![Player Graph 2](./player-graph-2.webp)](./player-graph-2.webp)
 
 Right now, any *Key* can be used on any *Lock*. In the next example, we will look at how to restrict *Keys* to only work with certain *Locks*.
 

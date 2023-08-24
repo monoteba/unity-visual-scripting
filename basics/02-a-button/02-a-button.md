@@ -13,7 +13,7 @@ This example builds on the [01. A Simple Player](../01-a-simple-player/01-a-simp
 
 Start by creating a game object with a sprite in a dark brown color. Add a `CircleCollider2D` component and set **Is Trigger** to `True`.
 
-![Button Inspector](./button-inspector.jpg)
+![Button Inspector](./button-inspector.webp)
 
 Next, set the **Tag** of the player game object to `Player` (at the top of the Inspector), since we will use the tag to identify whether it is in fact the player that has entered the button's trigger. 
 
@@ -25,7 +25,7 @@ Create a new **Script Graph** and set up three **Graph** variables:
 
 A `Boolean` is a type of data that can be either `true` or `false`. **Graph** variables are variables that only exist within that particular graph and cannot be accessed or modified elsewhere.
 
-![Graph Variables](./graph-variables.jpg)
+![Graph Variables](./graph-variables.webp)
 
 **On Start**, the button stores the initial color of the sprite, in order to toggle between its initial color and a "switched on" color defined in the graph.
 
@@ -33,4 +33,4 @@ A `Boolean` is a type of data that can be either `true` or `false`. **Graph** va
 
 Finally, the **On Trigger Enter/Exit 2D** events check if it is a game object tagged `Player` that has entered or exited the collider. If so, the `isPlayerOnButton` variable is set to `true` or `false` respectively.
 
-[![Graph](./graph.jpg)](./graph.jpg)
+[![Graph](./graph.webp)](./graph.webp)

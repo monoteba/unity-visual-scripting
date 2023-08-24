@@ -19,7 +19,7 @@ First, create a new game object called *Key*, assign a `BoxCollider2D` component
 
 We want the *Key* to trigger a *custom event* when the *Player* enters and exits the trigger. The *event* will let the *Player* know that a *Key* can be picked up. For the `CanPickUpKey` *event* we use an argument `Arg. 0` to send a reference to **This** particular game object - that is, the *Key*. When the *Player* then responds to the *event*, it will know exactly which *Key* it is that can be picked up.
 
-[![Key Graph](./key-graph.jpg)](./key-graph.jpg)
+[![Key Graph](./key-graph.webp)](./key-graph.webp)
 
 ## Picking Up The Key
 
@@ -31,17 +31,17 @@ In the *Player* script graph, start by creating three **Graph** variables. We wi
 - `keyInPocket` of type `Game Object`
 - `isCarryingKey` of type `Boolean`
 
-![Player Variables](./player-variables.jpg)
+![Player Variables](./player-variables.webp)
 
 The first step is to respond to the *events* triggered by the *Key*. So add the following nodes to the *Player* graph. Remember that they `CanPickUpKey` event is triggered with 1 argument, so we must also receive 1 argument here: `Arg. 0`. Fortunately, we want this argument, because it lets us know which *Key* triggered the event. We save this information in the `keyToPickUp` variable.
 
 The `CannotPickUpKey` event does not pass any argument. So instead, we set the `keyToPickUp` to `Null`. `Null` is a special value that means *nothing*. Think of it like a street address to nowhere. 
 
-[![Player Graph 1](./player-graph-1.jpg)](./player-graph-1.jpg)
+[![Player Graph 1](./player-graph-1.webp)](./player-graph-1.webp)
 
 The next piece of the *Player* logic, is to handle picking up and letting go of *Keys*. We first check if the `Jump` button is pressed and if it is, we determine if we are currently carrying a *Key*. If we are, then we let go of the *Key* by setting `keyInPocket` to `Null` and `isCarryingKey` to `false`. If we are not carrying a *Key*, then we check if we currently have a *Key* to pick up by checking if `keyToPickUp` is **not** `Null`. If it is not `Null`, then we can put the *Key* in our pocket.
 
-[![Player Graph 2](./player-graph-2.jpg)](./player-graph-2.jpg)
+[![Player Graph 2](./player-graph-2.webp)](./player-graph-2.webp)
 
 The final piece of the *Player* logic we want to add, is the logic that moves the *Key* together with the *Player* whenever the *Player* is carrying a *Key*.
 
@@ -55,4 +55,4 @@ We use **On Late Update** here because we want to ensure that the logic that mov
 
 You can see the order of all Unity's event functions here: [https://docs.unity3d.com/Manual/ExecutionOrder.html](https://docs.unity3d.com/Manual/ExecutionOrder.html).
 
-[![Player Graph 3](./player-graph-3.jpg)](./player-graph-3.jpg)
+[![Player Graph 3](./player-graph-3.webp)](./player-graph-3.webp)
