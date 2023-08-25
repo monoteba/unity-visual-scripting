@@ -30,7 +30,7 @@ The *output* of **Input.Get Axis Raw** is a value between `-1.0` and `1.0`. For 
 
 > A small side effect of adding the two axes together is that the player moves faster diagonally. We won't fix this in this example.
 
-### On Update and On Fixed Update
+## On Update and On Fixed Update
 
 **On Update** is a special event that is called every frame of our game. This is where most of your real-time logic will happen. It is where we gradually frame-by-frame move objects to create the illusion of smooth movement. It is also where we may check if the human player presses any buttons. **On Update** syncs perfectly with when the image is rendered on to the screen.
 
