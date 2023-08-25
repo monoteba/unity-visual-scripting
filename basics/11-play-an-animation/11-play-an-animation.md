@@ -46,10 +46,37 @@ Below is the *Gate@Open* animation clip in the **Animation** window.
 
 For the *Gate's* script graph, we just create a **Custom Event** node that can be triggered by another script.
 
-We then use an **Animator: Play (State Name)** node to play an animation by providing it the name of the *state* we would like to play. In this case, we use the value `Open`.
+We then use an **Animator: Play (State Name)** node to play an animation by providing it the name of the *state* we would like to play. In this case, we use the value `Open`. That's all there is to it!
 
 In addition, we disable the collider for the gate so that the player can walk through it. The gate collider is set up using an **Object** variable called `gateCollider` and is of type `Game Object`.
 
 <img src="./gate-variables.webp" srcset="./gate-variables.webp 2x" alt="Gate Variables">
 
 [<img src="./gate-graph.webp" srcset="./gate-graph.webp 2x" alt="Gate Graph">](./gate-graph.webp)
+
+## Making the Lock Open the Gate
+
+The last piece of this example, is triggering the *event* from the *Lock* that we've made previously.
+
+For the *Lock's* script graph, add an **Object** variable named `gate` of type `Game Object` and assign the *Gate* game object to it.
+
+<img src="./lock-variables.webp" srcset="./lock-variables.webp 2x" alt="Lock Variables">
+
+Then add the highlighted nodes to the existing flow of the *Lock's* `OnUnlock` event that will trigger the `OpenGate` event on the *Gate*.
+
+[<img src="./lock-graph.webp" srcset="lock-graph.webp 2x" alt="Lock Graph">](./lock-graph.webp)
+
+## Bonus Info
+
+In addition to using **Animator: Play (State Name)** you can also use **Animator: Cross Fade In Fixed Time (State Name, Fixed Transition Duration)**. The `Fixed Transition Duration` expects a certain number of seconds, like `0.25` that defines how long the transition should be.
+
+Note that *cross fading* does not work with sprites, but is very useful when using 3D animation or animating other properties that can be smoothly transitioned between. 
+
+<img src="./crossfade.webp" srcset="./crossfade.webp 2x" alt="Cross Fade">
+
+I recommend you look up Unity's Scripting API documentation for more information about `Play()` and `CrossFadeInFixedTime()`. Though it is written for C# scripting, the explanations also apply to visual scripting.
+
+- [Animator.Play](https://docs.unity3d.com/ScriptReference/Animator.Play.html)
+- [Animator.PlayInFixedTime](https://docs.unity3d.com/ScriptReference/Animator.PlayInFixedTime.html)
+- [Animator.CrossFade](https://docs.unity3d.com/ScriptReference/Animator.CrossFade.html)
+- [Animator.CrossFadeInFixedTime](https://docs.unity3d.com/ScriptReference/Animator.CrossFadeInFixedTime.html)
