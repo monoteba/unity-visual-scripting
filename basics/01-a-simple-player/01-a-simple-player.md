@@ -30,7 +30,7 @@ The *output* of **Input.Get Axis Raw** is a value between `-1.0` and `1.0`. For 
 
 A small side effect of adding the two axes together is that the player moves faster diagonally. To fix this, we can *clamp* the vector created from the input. We limit the *magnitude* to `1.0` and thereby prevent the player from moving faster.
 
-> The mathematical explanation for why the input is larger diagonally is explained by the Pythagorean theorem: <code>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></code>. Provided both `x` and `y` is `1`, the resulting vector will have a magnitude of the squareroot of 2 or approximately `1.4142`.
+> The mathematical explanation for why the input is larger diagonally is explained by the Pythagorean theorem: <code>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></code>. Provided both `x` and `y` is `1`, the resulting vector will have a magnitude of <code>&radic;2</code> or approximately `1.4142`.
 
 ## On Update and On Fixed Update
 
