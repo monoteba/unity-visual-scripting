@@ -4,7 +4,7 @@ nav_order: 1
 description: A collection of relatively small Visual Scripting graph examples for use with Unity 2021 and later.
 ---
 
-# Visual Scripting Graphs
+# Script Graphs
 
 ### A collection of relatively small Visual Scripting graph examples for use with Unity 2021 and later.[^1]
 
