@@ -24,11 +24,11 @@ In this example I will be using an animation of a gate opening.
 
 The first step is to set up a new game object with an `Animator` component that has an `Animator Controller` assigned. 
 
-![Gate Inspector](./gate-inspector.webp)
+<img src="./gate-inspector.webp" srcset="./gate-inspector.webp 2x" alt="Gate Inspector">
 
 In addition to the game object, I have added three child game objects that each have a `BoxCollider2D`. They act as colliders for the edge of the gate and the gate itself.
 
-![Gate Colliders](./gate-colliders.webp)
+<img src="./gate-colliders.webp" srcset="./gate-colliders.webp 2x" alt="Gate Colliders">
 
 ## The Animator Controller
 
@@ -36,11 +36,11 @@ The `Animator Controller` is set up with two *states*: *Idle* and *Open*. The *I
 
 We will use the names of the *States*, rather than the animation clips themselves, later in our Script Graph. 
 
-![Animator Controller](./gate-animator.webp)
+<img src="./gate-animator.webp" srcset="./gate-animator.webp 2x" alt="Animator Controller">
 
 Below is the *Gate@Open* animation clip in the **Animation** window.
 
-![Animation Clip](./gate-animation.webp)
+<img src="./gate-animation.webp" srcset="./gate-animation.webp 2x" alt="Animation Clip">
 
 ## The Gate Script Graph
 
@@ -50,6 +50,6 @@ We then use an **Animator: Play (State Name)** node to play an animation by prov
 
 In addition, we disable the collider for the gate so that the player can walk through it. The gate collider is set up using an **Object** variable called `gateCollider` and is of type `Game Object`.
 
-<img src="./gate-variables.webp" srcset="./gate-variables.webp 2x" alt="Gate Variables" />
+<img src="./gate-variables.webp" srcset="./gate-variables.webp 2x" alt="Gate Variables">
 
-![Gate Graph](./gate-graph.webp)
+[<img src="./gate-graph.webp" srcset="./gate-graph.webp 2x" alt="Gate Graph">](./gate-graph.webp)
