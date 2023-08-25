@@ -18,7 +18,7 @@ Open up the door graph and add two new variables:
 - `closeTime` of type `Float` as a **Graph** variable
 - `closeDuration` of type `Float` as a **Object** variable
 
-![Graph Variables](./graph-variables.webp)
+<img src="./graph-variables.webp" srcset="./graph-variables.webp 2x" alt="Graph Variables">
 
 Start by adding the logic at the end of the **Custom Event** that sets the `closeTime` variable to `0` if the `isOpen` variable is `true`. Highlighted in yellow at the top.
 
@@ -30,4 +30,4 @@ At the bottom of the graph is the new logic that will close the door after a cer
 
 You may note that the button does not automatically switch color! I will leave it to you to figure out. **Hint:** You may use custom events :)
 
-[![Graph](./graph.webp)](./graph.webp)
+[<img src="./graph.webp" srcset="./graph.webp 2x" alt="Graph">](./graph.webp)

@@ -15,7 +15,7 @@ This example covers how to play a **Particle System** when the player enters the
 
 The first step is to create a **Particle System** and parent it under the first *Diamond* game object. Make sure it is placed at the center of the *Diamond*.
 
-![Particle System](./particles.webp)
+<img src="./particles.webp" srcset="./particles.webp 2x" alt="Particle System">
 
 Duplicate the **Particle System** and repeat for every other *Diamond*.
 
@@ -23,13 +23,13 @@ Duplicate the **Particle System** and repeat for every other *Diamond*.
 
 Next, open up the *Diamond* graph and add an **Object** variable called `particles` and set its type to be `Particle System`.
 
-![Variables](./variables.webp)
+<img src="./variables.webp" srcset="./variables.webp 2x" alt="Variables">
 
 Then replace the **Game Object: Set Active** node with a **Sprite Renderer: Set Enabled** and **Circle Collider 2D: Set Enabled** node. Both should set the value to `false`. We do this, to avoid disabling the particles parented under the *Diamond*. 
 
 Finally, add a **Particle System: Play** node and assign the `particles` variable to its *Target* input.
 
-[![Graph](./graph.webp)](./graph.webp)
+[<img src="./graph.webp" srcset="./graph.webp 2x" alt="Graph">](./graph.webp)
 
 ## Assigning the Particle System
 

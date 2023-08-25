@@ -20,11 +20,11 @@ We can use the **Animation Curve** to control easing of the door, or even give i
 
 In addition, we add a **Graph** variable named `animationTime` of type `Float`. We will use this variable to remember how far the animation has progressed. Initially, we set the value `animationTime` to be the same as `animationDuration`, thereby assuming that the animation is "done" when our game starts. The animation is then restarted whenever the door is toggled.
 
-![Graph Variables](./graph-variables.webp)
+<img src="./graph-variables.webp" srcset="./graph-variables.webp 2x" alt="Graph Variables">
 
 A lot is going on in this graph, so take a deep breath, and let me try to walk you through it.
 
-[![Graph](./graph.webp)](./graph.webp)
+[<img src="./graph.webp" srcset="./graph.webp 2x" alt="Graph">](./graph.webp)
 
 Starting from the top, the **On Start** simply sets the `animationTime` to the value of `animationDuration`. This makes our **On Update** flow stop at the first **If** node it encounters and prevents any movement. In other words, no animation is happening.
 
@@ -38,6 +38,6 @@ The **Select** node then uses the `isOpen` variable to decide which values goes 
 
 The **Lerp Unclamped** node then takes the start and end position as inputs, together with a special value called `T`. If you imagine a line, the value of `T` describes how far along the line the *output* should be. A value of `0.0` means it will be right at the beginning, and a value of `1.0` means at the end. Any number in between will be a percentage between the two vectors. The word *unclamped* means that the value of `T` can past `1.0`, like `1.5`, which would make the door overshoot its target. Try making a curve like the one below to see what I mean.
 
-![Animation Curve](./animation-curve.webp)
+<img src="./animation-curve.webp" srcset="./animation-curve.webp 2x" alt="Animation Curve">
 
 The final piece of the puzzle, is to *evaluate* the **Animation Curve**. That means given some value along the X-axis (or time axis), the curve will *evaluate* to some value along the Y-axis. So we divide the `animationTime` with the `animationDuration` to get a percentage of how much the animation has progressed, and use this number to *evaluate* the curve along the X-axis - imagine time moving from left to right along the curve.

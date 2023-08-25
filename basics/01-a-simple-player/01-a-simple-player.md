@@ -20,7 +20,7 @@ On the `Rigidbody2D` set...
 - **Interpolate** to `Interpolate`
 - **Freeze Rotation** to `True` (ticked on)
 
-![Player Inspector](./player-inspector.webp)
+<img src="./player-inspector.webp" srcset="./player-inspector.webp 2x" alt="Player Inspector">
 
 Create a new **Script Graph** with an **Object** variable[^1] named `moveSpeed` of type `Float` with an initial value of `3.0`. A `Float` is simply a number with decimals. This variable is used in the **Get Variable** node. An **Object** variable, is a variable that can be accessed through the object the graph is added to. This is also how you can expose variables in the Unity inspector, and tweak them as needed.
 
@@ -38,7 +38,7 @@ The *output* of **Input.Get Axis Raw** is a value between `-1.0` and `1.0`. For 
 
 Detecting input, especially the exact moment a button is pressed down or release, should happen during **On Update**. This is because **On Fixed Update** does not update in-sync with the input system, and it is therefore possible to miss a button press. Since we are responding to movement input *continuously* we are less concerned with this detail.
 
-[![Graph](./graph.webp)](./graph.webp)
+[<img src="./graph.webp" srcset="./graph.webp 2x" alt="Graph">](./graph.webp)
 
 ---
 
