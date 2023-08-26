@@ -36,7 +36,7 @@ A small side effect of adding the two axes together is that the player moves fas
 
 `On Update` is a special event that is called every frame of our game. It is where we gradually move object frame-by-frame to create the illusion of smooth movement. It is also where we may check if any buttons are pressed down. `On Update` is in perfect sync with rendering the image to the screen.
 
-`On Fixed Update` on the other hand, is called at a fixed interval that is separate from `On Update` and does not sync with the screen. Its primary function is to simulate physics which may need to happen more frequently in complex scenarios or less often to consume less energy on mobile device. `On Fixed Update` should generally be used whenever you are modifying a `Rigidbody` or `Rigidbody2D`, which we are here.
+`On Fixed Update` on the other hand, is called at a fixed interval that is separate from `On Update` and does not sync with the screen. Its primary function is to simulate physics which may need to happen more frequently in complex scenarios or less often to consume less energy on mobile devices. `On Fixed Update` should generally be used whenever you are modifying a `Rigidbody` or `Rigidbody2D`, which we are here.
 
 Detecting input, especially the exact moment a button is pressed down or released, should happen during `On Update`. This is because `On Fixed Update` does not update in-sync with the input system, and it is therefore possible to miss a button press. Since we are responding to movement input *continuously* we are less concerned with this detail.
 
