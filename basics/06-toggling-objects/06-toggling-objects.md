@@ -15,13 +15,13 @@ This example demonstrates how to activate and deactivate game objects as well as
 
 The scene is made up of a *trigger* that enables four diamond game objects when the player enters it. The trigger is shown below (note the thin green box next to the door). Make sure the `Is Trigger` property is set to `true` on the `BoxCollider2D` component.
 
-<img src="./diamond-trigger-2x.webp" srcset="./diamond-trigger-2x.webp 2x" alt="Diamond Trigger">
+<img src="./diamond-trigger-1x.webp" srcset="./diamond-trigger-1x.webp 1x, ./diamond-trigger-2x.webp 2x" alt="Diamond Trigger">
 
 ## Preparing the diamonds
 
 Each of the four diamonds are set up with a `CircleCollider2D` component, which is also set to act like a trigger rather than a collider.
 
-<img src="./diamond-inspector-2x.webp" srcset="./diamond-inspector-2x.webp 2x" alt="Diamond Inspector">
+<img src="./diamond-inspector-1x.webp" srcset="./diamond-inspector-1x.webp 1x, ./diamond-inspector-2x.webp 2x" alt="Diamond Inspector">
 
 ## Creating the diamond trigger graph
 
@@ -31,9 +31,9 @@ We use the `Component: Compare Tag` node to check if it is the game object tagge
 
 We are then using a `For Each Loop` node to *iterate* over each of the game objects assigned to the list. One by one, each game object is disabled using the `Game Object: Set Active` node. The `Body` output of the loop is where we apply some scripting logic to each item in the list. The `Exit` output is what we do *after* the loop has finished iterating over each item in the list. The `Item` is the current object. Imagine a card deck where you pick on card from the top of the deck (the `Item`) and then draw a moustache if it is a queen (the `Body` flow logic).
 
-[<img src="./diamond-trigger-graph-2x.webp" srcset="./diamond-trigger-graph-2x.webp 2x" alt="Diamond Trigger Graph">](./diamond-trigger-graph-2x.webp)
+[<img src="./diamond-trigger-graph-1x.webp" srcset="./diamond-trigger-graph-1x.webp 1x, ./diamond-trigger-graph-2x.webp 2x" alt="Diamond Trigger Graph">](./diamond-trigger-graph-2x.webp)
 
-<img src="./diamond-trigger-inspector-2x.webp" srcset="./diamond-trigger-inspector-2x.webp 2x" alt="Diamond Trigger Inspector">
+<img src="./diamond-trigger-inspector-1x.webp" srcset="./diamond-trigger-inspector-1x.webp 1x, ./diamond-trigger-inspector-2x.webp 2x" alt="Diamond Trigger Inspector">
 
 ## Creating the diamond graph
 
@@ -41,4 +41,4 @@ Now that we can enable all the diamonds when the player walks through the door, 
 
 This graph simply deactivates the game object at the beginning using the `On Start` event as well as when a game object tagged `Player` enters its trigger. You can assign the same graph to each of the diamonds. When assigning the same graph to multiple objects, be aware that you need to copy the `Variables` component as well for the *Object* variables to remain identical.
 
-[<img src="./diamond-graph-2x.webp" srcset="./diamond-graph-2x.webp 2x" alt="Diamond Graph">](./diamond-graph-2x.webp)
+[<img src="./diamond-graph-1x.webp" srcset="./diamond-graph-1x.webp 1x, ./diamond-graph-2x.webp 2x" alt="Diamond Graph">](./diamond-graph-2x.webp)

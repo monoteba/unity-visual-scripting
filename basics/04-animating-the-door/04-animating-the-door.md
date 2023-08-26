@@ -20,11 +20,11 @@ We can use the `Animation Curve` to control easing of the door or even give it a
 
 In addition, we add a *Graph* variable named `animationTime` of type `Float`. We will use this variable to remember how far the animation has progressed. Initially, we set the value of `animationTime` to be the same as `animationDuration`, thereby assuming that the animation is "done" when our game starts. The animation is then restarted whenever the door is toggled.
 
-<img src="./graph-variables-2x.webp" srcset="./graph-variables-2x.webp 2x" alt="Graph Variables">
+<img src="./graph-variables-1x.webp" srcset="./graph-variables-1x.webp 1x, ./graph-variables-2x.webp 2x" alt="Graph Variables">
 
 A lot is going on in this graph, so let us walk through it one by one.
 
-[<img src="./graph-2x.webp" srcset="./graph-2x.webp 2x" alt="Graph">](./graph-2x.webp)
+[<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x" alt="Graph">](./graph-2x.webp)
 
 Starting from the top, the `On Start` event simply sets the `animationTime` to the value of `animationDuration`. This makes our `On Update` event flow stop at the first `If` node it encounters and prevents any movement. In other words, no animation is happening.
 
@@ -40,6 +40,6 @@ The `Lerp Unclamped` node then takes the start and end position as inputs togeth
 
 > *Lerp* is jargon for *linear interpolate*. Given two values, a number or vector in between can be found using linear interpolation. 
 
-<img src="./animation-curve-2x.webp" srcset="./animation-curve-2x.webp 2x" alt="Animation Curve">
+<img src="./animation-curve-1x.webp" srcset="./animation-curve-1x.webp 1x, ./animation-curve-2x.webp 2x" alt="Animation Curve">
 
 The final piece of the puzzle, is to *evaluate* the `Animation Curve`. That means given some value along the X-axis (or time axis), the curve will *evaluate* to some value along the Y-axis. So we divide the `animationTime` with the `animationDuration` to get a percentage of how much the animation has progressed, and use this number to *evaluate* the curve along the X-axis. You may imagine time moving from left to right along the curve.

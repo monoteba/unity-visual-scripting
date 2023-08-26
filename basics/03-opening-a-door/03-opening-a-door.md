@@ -20,26 +20,26 @@ The two *Graph* variables should be named...
 
 The *Object* variable should be named `openOffset` and be of type `Boolean`. In this example, the `openOffset` is set to a value of `X: 0`, `Y: -1.5`, `Z: 0`.
 
-<img src="./door-variables-2x.webp" srcset="./door-variables-2x.webp 2x" alt="Door Variables">
+<img src="./door-variables-1x.webp" srcset="./door-variables-1x.webp 1x, ./door-variables-2x.webp 2x" alt="Door Variables">
 
-<img src="./door-inspector-2x.webp" srcset="./door-inspector-2x.webp 2x" alt="Door Inspector">
+<img src="./door-inspector-1x.webp" srcset="./door-inspector-1x.webp 1x, ./door-inspector-2x.webp 2x" alt="Door Inspector">
 
 In the graph, we then use a `Custom Event` node that responds to an event called `ToggleDoor`. We will *trigger* this event later from our button.
 
 ## The door
 
-[<img src="./door-graph-2x.webp" srcset="./door-graph-2x.webp 2x" alt="Door Graph">](./door-graph-2x.webp)
+[<img src="./door-graph-1x.webp" srcset="./door-graph-1x.webp 1x, ./door-graph-2x.webp 2x" alt="Door Graph">](./door-graph-2x.webp)
 
 ## The button
 
 For the button, we add an *Object* variable named `door`. We then assign our *Door* game object to the button in the Inspector.
 
-<img src="./button-variables-2x.webp" srcset="./button-variables-2x.webp 2x" alt="Button Variables">
+<img src="./button-variables-1x.webp" srcset="./button-variables-1x.webp 1x, ./button-variables-2x.webp 2x" alt="Button Variables">
 
-<img src="./button-inspector-2x.webp" srcset="./button-inspector-2x.webp 2x" alt="Button Inspector">
+<img src="./button-inspector-1x.webp" srcset="./button-inspector-1x.webp 1x, ./button-inspector-2x.webp 2x" alt="Button Inspector">
 
 Finally, we use a `Trigger Custom Event` node to send the `ToggleDoor` event to the *Door* game object. 
 
 Open the existing graph for the button and add the nodes highlighted in yellow.
 
-[<img src="./button-graph-2x.webp" srcset="./button-graph-2x.webp 2x" alt="Button Graph">](./button-graph-2x.webp)
+[<img src="./button-graph-1x.webp" srcset="./button-graph-1x.webp 1x, ./button-graph-2x.webp 2x" alt="Button Graph">](./button-graph-2x.webp)

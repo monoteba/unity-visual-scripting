@@ -13,7 +13,7 @@ This example builds on [01. A Simple Player](../01-a-simple-player/01-a-simple-p
 
 Start by creating a game object with a sprite in a colour of your choosing. Add a `CircleCollider2D` component and set `Is Trigger` to `true`.
 
-<img src="./button-inspector-2x.webp" srcset="./button-inspector-2x.webp 2x" alt="Button Inspector">
+<img src="./button-inspector-1x.webp" srcset="./button-inspector-1x.webp 1x, ./button-inspector-2x.webp 2x" alt="Button Inspector">
 
 Next, set the *tag* of the player game object to `Player` (at the top of the *Inspector*), since we will use the tag to identify whether it is in fact the player that has entered the button's trigger. 
 
@@ -25,7 +25,7 @@ Create a new *Script Graph* and set up three *Graph* variables:
 
 A `Boolean` is a type of data that can be either `true` or `false`. *Graph* variables are variables that only exist within a particular graph and cannot be accessed or modified elsewhere.
 
-<img src="./graph-variables-2x.webp" srcset="./graph-variables-2x.webp 2x" alt="Graph Variables">
+<img src="./graph-variables-1x.webp" srcset="./graph-variables-1x.webp 1x, ./graph-variables-2x.webp 2x" alt="Graph Variables">
 
 `On Start`, the button stores the initial colour of the sprite, in order to toggle between its initial colour and a "switched on" colour defined in the graph.
 
@@ -35,4 +35,4 @@ Finally, the `On Trigger Enter 2D` and `On Trigger Exit 2D` events check if it i
 
 To *enter* a trigger means that some rigid body is intersecting with the trigger. This event only happens on one frame, which is when the rigid body begins intersecting with the trigger. 
 
-[<img src="./graph-2x.webp" srcset="./graph-2x.webp 2x" alt="Graph">](./graph-2x.webp)
+[<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x" alt="Graph">](./graph-2x.webp)

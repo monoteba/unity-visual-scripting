@@ -23,7 +23,7 @@ We want the *Key* to trigger a `Custom Event` when the *Player* game object ente
 
 > `This` is a special word in programming that refers to "itself". 
 
-[<img src="./key-graph-2x.webp" srcset="./key-graph-2x.webp 2x" alt="Key Graph">](./key-graph-2x.webp)
+[<img src="./key-graph-1x.webp" srcset="./key-graph-1x.webp 1x, ./key-graph-2x.webp 2x" alt="Key Graph">](./key-graph-2x.webp)
 
 ## Picking up the key
 
@@ -35,7 +35,7 @@ In the *Player* script graph, start by creating three *Graph* variables. We will
 - `keyInPocket` of type `Game Object`
 - `isCarryingKey` of type `Boolean`
 
-<img src="./player-variables-2x.webp" srcset="./player-variables-2x.webp 2x" alt="Player Variables">
+<img src="./player-variables-1x.webp" srcset="./player-variables-1x.webp 1x, ./player-variables-2x.webp 2x" alt="Player Variables">
 
 The first step is to respond to the *events* triggered by the *Key*. We respond the events using the `Custom Event` nodes added to the *Player* graph here. Remember that the `CanPickUpKey` event is triggered with 1 argument, so we must also receive 1 argument: `Arg. 0`. We want this argument because it informs us about which *Key* game object triggered the event. We save this information in the `keyToPickUp` variable.
 
@@ -43,11 +43,11 @@ The `CannotPickUpKey` event does not pass any argument. So instead, we set the `
 
 > `Null` is a special value that means *nothing*. Think of it like a street address to nowhere. 
 
-[<img src="./player-graph-1-2x.webp" srcset="./player-graph-1-2x.webp 2x" alt="Player Graph 1">](./player-graph-1-2x.webp)
+[<img src="./player-graph-1-1x.webp" srcset="./player-graph-1-1x.webp 1x, ./player-graph-1-2x.webp 2x" alt="Player Graph 1">](./player-graph-1-2x.webp)
 
 The next piece of the *Player* flow, is to handle picking up and letting go of *Keys*. We first check if the `Jump` button is pressed and if it is, we determine if we are currently carrying a *Key*. If we are, then we let go of the *Key* by setting `keyInPocket` to `Null` and `isCarryingKey` to `false`. If we are not carrying a *Key*, then we check if we currently have a *Key* to pick up by checking if `keyToPickUp` is *not* `Null`. If it is not `Null`, then we can put the *Key* in our pocket.
 
-[<img src="./player-graph-2-2x.webp" srcset="./player-graph-2-2x.webp 2x" alt="Player Graph 2">](./player-graph-2-2x.webp)
+[<img src="./player-graph-2-1x.webp" srcset="./player-graph-2-1x.webp 1x, ./player-graph-2-2x.webp 2x" alt="Player Graph 2">](./player-graph-2-2x.webp)
 
 The final piece of the *Player* flow we want to add, is the logic that moves the *Key* together with the *Player* whenever the *Player* is carrying a *Key*.
 
@@ -62,4 +62,4 @@ We use `On Late Update` here because we want to ensure that the scripting logic 
 
 You can see the order of all Unity's event functions here: [Order of execution for event functions](https://docs.unity3d.com/Manual/ExecutionOrder.html).
 
-[<img src="./player-graph-3-2x.webp" srcset="./player-graph-3-2x.webp 2x" alt="Player Graph 3">](./player-graph-3-2x.webp)
+[<img src="./player-graph-3-1x.webp" srcset="./player-graph-3-1x.webp 1x, ./player-graph-3-2x.webp 2x" alt="Player Graph 3">](./player-graph-3-2x.webp)

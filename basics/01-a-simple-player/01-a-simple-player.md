@@ -20,7 +20,7 @@ On the `Rigidbody2D` set...
 - `Interpolate` to `Interpolate`
 - `Freeze Rotation` to `true` (ticked on)
 
-<img src="./player-inspector-2x.webp" srcset="./player-inspector-2x.webp 2x" alt="Player Inspector">
+<img src="./player-inspector-1x.webp" srcset="./player-inspector-1x.webp 1x, ./player-inspector-2x.webp 2x" alt="Player Inspector">
 
 Create a new *Script Graph* with an *Object* variable[^1] named `moveSpeed` of type `Float` with an initial value of `3.0`. A `Float` is simply a number with decimals. This variable is used in the `Get Variable` node. An *Object* variable belongs to the game object the script is attached to and set through the `Variables` component on the game object.
 
@@ -40,7 +40,7 @@ A small side effect of adding the two axes together is that the player moves fas
 
 Detecting input, especially the exact moment a button is pressed down or released, should happen during `On Update`. This is because `On Fixed Update` does not update in-sync with the input system, and it is therefore possible to miss a button press. Since we are responding to movement input *continuously* we are less concerned with this detail.
 
-[<img src="./graph-2x.webp" srcset="./graph-2x.webp 2x" alt="Graph">](./graph-2x.webp)
+[<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x" alt="Graph">](./graph-2x.webp)
 
 ---
 

@@ -24,11 +24,11 @@ In this example I will be using an animation of a gate opening.
 
 The first step is to set up a new game object with an `Animator` component that has an `Animator Controller` assigned. 
 
-<img src="./gate-inspector-2x.webp" srcset="./gate-inspector-2x.webp 2x" alt="Gate Inspector">
+<img src="./gate-inspector-1x.webp" srcset="./gate-inspector-1x.webp 1x, ./gate-inspector-2x.webp 2x" alt="Gate Inspector">
 
 In addition to the game object, I have added three child game objects that each have a `BoxCollider2D`. They act as colliders for the edge of the gate and the gate itself.
 
-<img src="./gate-colliders-2x.webp" srcset="./gate-colliders-2x.webp 2x" alt="Gate Colliders">
+<img src="./gate-colliders-1x.webp" srcset="./gate-colliders-1x.webp 1x, ./gate-colliders-2x.webp 2x" alt="Gate Colliders">
 
 ## The Animator Controller
 
@@ -36,11 +36,11 @@ The `Animator Controller` is set up with two *states*: *Idle* and *Open*. The *I
 
 We will use the names of the *States*, rather than the animation clips themselves, later in our Script Graph. 
 
-<img src="./gate-animator-2x.webp" srcset="./gate-animator-2x.webp 2x" alt="Animator Controller">
+<img src="./gate-animator-1x.webp" srcset="./gate-animator-1x.webp 1x, ./gate-animator-2x.webp 2x" alt="Animator Controller">
 
 Below is the *Gate@Open* animation clip in the **Animation** window.
 
-<img src="./gate-animation-2x.webp" srcset="./gate-animation-2x.webp 2x" alt="Animation Clip">
+<img src="./gate-animation-1x.webp" srcset="./gate-animation-1x.webp 1x, ./gate-animation-2x.webp 2x" alt="Animation Clip">
 
 ## The Gate Script Graph
 
@@ -50,9 +50,9 @@ We then use an **Animator: Play (State Name)** node to play an animation by prov
 
 In addition, we disable the collider for the gate so that the player can walk through it. The gate collider is set up using an **Object** variable called `gateCollider` and is of type `Game Object`.
 
-<img src="./gate-variables-2x.webp" srcset="./gate-variables-2x.webp 2x" alt="Gate Variables">
+<img src="./gate-variables-1x.webp" srcset="./gate-variables-1x.webp 1x, ./gate-variables-2x.webp 2x" alt="Gate Variables">
 
-[<img src="./gate-graph-2x.webp" srcset="./gate-graph-2x.webp 2x" alt="Gate Graph">](./gate-graph-2x.webp)
+[<img src="./gate-graph-1x.webp" srcset="./gate-graph-1x.webp 1x, ./gate-graph-2x.webp 2x" alt="Gate Graph">](./gate-graph-2x.webp)
 
 ## Making the Lock Open the Gate
 
@@ -60,11 +60,11 @@ The last piece of this example, is triggering the *event* from the *Lock* that w
 
 For the *Lock's* script graph, add an **Object** variable named `gate` of type `Game Object` and assign the *Gate* game object to it.
 
-<img src="./lock-variables-2x.webp" srcset="./lock-variables-2x.webp 2x" alt="Lock Variables">
+<img src="./lock-variables-1x.webp" srcset="./lock-variables-1x.webp 1x, ./lock-variables-2x.webp 2x" alt="Lock Variables">
 
 Then add the highlighted nodes to the existing flow of the *Lock's* `OnUnlock` event that will trigger the `OpenGate` event on the *Gate*.
 
-[<img src="./lock-graph-2x.webp" srcset="lock-graph-2x.webp 2x" alt="Lock Graph">](./lock-graph-2x.webp)
+[<img src="./lock-graph-1x.webp" srcset="lock-graph-1x.webp 1x, lock-graph-2x.webp 2x" alt="Lock Graph">](./lock-graph-2x.webp)
 
 ## Bonus Info
 
@@ -72,7 +72,7 @@ In addition to using **Animator: Play (State Name)** you can also use **Animator
 
 Note that *cross fading* does not work with sprites, but is very useful when using 3D animation or animating other properties that can be smoothly transitioned between. 
 
-<img src="./crossfade-2x.webp" srcset="./crossfade-2x.webp 2x" alt="Cross Fade">
+<img src="./crossfade-1x.webp" srcset="./crossfade-1x.webp 1x, ./crossfade-2x.webp 2x" alt="Cross Fade">
 
 I recommend you look up Unity's Scripting API documentation for more information about `Play()` and `CrossFadeInFixedTime()`. Though it is written for C# scripting, the explanations also apply to visual scripting.
 

@@ -18,7 +18,7 @@ Open up the *Door* graph and add two new variables:
 - `closeTime` of type `Float` as a *Graph* variable
 - `closeDuration` of type `Float` as a *Object* variable
 
-<img src="./graph-variables-2x.webp" srcset="./graph-variables-2x.webp 2x" alt="Graph Variables">
+<img src="./graph-variables-1x.webp" srcset="./graph-variables-1x.webp 1x, ./graph-variables-2x.webp 2x" alt="Graph Variables">
 
 Start by adding the logic at the end of the `Custom Event` that sets the `closeTime` variable to `0` if the `isOpen` variable is `true` (highlighted at the top).
 
@@ -39,6 +39,6 @@ Nodes like `And`, `Or`, `Less`, `Greater` are what is known as *boolean expressi
 - `5 < 9` is `false` (less than)
 - `3 ≤ 1` is `true` (less than or equal to)
 
-[<img src="./graph-2x.webp" srcset="./graph-2x.webp 2x" alt="Graph">](./graph-2x.webp)
+[<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x" alt="Graph">](./graph-2x.webp)
 
 You may note that the button does not automatically switch color! I will leave it to you to figure out. *Hint:* You may use a `Custom Event` :)
