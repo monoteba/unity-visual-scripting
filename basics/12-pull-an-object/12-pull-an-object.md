@@ -17,7 +17,7 @@ With this in mind, we can make another object move around with the player and ha
 
 For this example I have set up a circle with two `CircleCollider2D`. One that acts as a collider and the other as a trigger.
 
-<img src="./inspector.webp" srcset="./inspector.webp 2x" alt="Inspector">
+<img src="./inspector-1x.webp" srcset="./inspector-1x.webp 1x, ./inspector-2x.webp 2x" alt="Inspector">
 
 ## Adding the script graph
 
@@ -28,7 +28,7 @@ I use four *Graph* variables to keep track of the object's state and other relev
 - `player` of type `Transform`
 - `parent` of type `Transform`
 
-<img src="./variables.webp" srcset="./variables.webp 2x" alt="Variables">
+<img src="./variables-1x.webp" srcset="./variables-1x.webp 1x, ./variables-2x.webp 2x" alt="Variables">
 
 In the `On Start` event flow, the `parent` variable is set to the parent `Transform` of the object using `Transform: Get Parent`. In case there is no parent, the value will be `null`.
 
@@ -40,4 +40,4 @@ I am using the `Transform: Set Parent` node with two inputs: `Parent` and `World
 
 > When non-uniform scaling exists in the hierarchy of a transform, it may not be possible to perfectly maintain its appearance. This is due to how transform matrices are accumulated. 
 
-[<img src="./graph.webp" srcset="./graph.webp 2x" alt="Graph">](./graph.webp)
+[<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x" alt="Graph">](./graph.webp)
