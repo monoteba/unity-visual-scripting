@@ -1,6 +1,6 @@
 ---
 title: 12. Pull an Object
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 12. Pull an Object

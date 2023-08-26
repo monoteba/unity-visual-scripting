@@ -1,6 +1,6 @@
 ---
 title: 11. Play an Animation
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 11. Play an Animation

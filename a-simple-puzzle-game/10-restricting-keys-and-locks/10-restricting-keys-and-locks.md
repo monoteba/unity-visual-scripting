@@ -1,6 +1,6 @@
 ---
 title: 10. Restricting Keys and Locks
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 10. Restricting Keys and Locks

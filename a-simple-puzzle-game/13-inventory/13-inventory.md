@@ -1,6 +1,6 @@
 ---
 title: 13. Inventory
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 13. Inventory

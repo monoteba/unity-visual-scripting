@@ -1,6 +1,6 @@
 ---
 title: 01. A Simple Player
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 01. A Simple Player

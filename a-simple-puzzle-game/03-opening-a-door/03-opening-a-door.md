@@ -1,6 +1,6 @@
 ---
 title: 03. Opening a Door
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 03. Opening a Door

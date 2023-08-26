@@ -1,6 +1,6 @@
 ---
 title: 06. Toggling Objects
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 06. Toggling Objects

@@ -1,6 +1,6 @@
 ---
 title: 02. A Button
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 02. A Button

@@ -1,6 +1,6 @@
 ---
 title: 09. Placing Keys In Locks
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 09. Placing Keys In Locks

@@ -1,6 +1,6 @@
 ---
 title: 07. Playing Particles
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 07. Playing Particles

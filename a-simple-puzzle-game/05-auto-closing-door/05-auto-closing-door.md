@@ -1,6 +1,6 @@
 ---
 title: 05. Auto Closing Door
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 05. Auto Closing Door

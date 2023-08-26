@@ -1,6 +1,6 @@
 ---
 title: 08. Picking Up A Key
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 08. Picking Up A Key

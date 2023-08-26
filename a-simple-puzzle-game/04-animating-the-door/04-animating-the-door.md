@@ -1,6 +1,6 @@
 ---
 title: 04. Animating the Door
-parent: Basics
+parent: A Simple Puzzle Game
 ---
 
 # 04. Animating the Door
