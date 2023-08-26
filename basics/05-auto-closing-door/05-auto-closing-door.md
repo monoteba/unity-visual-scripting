@@ -34,9 +34,9 @@ Nodes like `And`, `Or`, `Less`, `Greater` are what is known as *boolean expressi
 - `true AND false` is `false`
 - `true OR false` is `true`
 - `false OR false` is `false`
-- `11 > 7` is `true` (greater than)
+- `7 > 11` is `false` (greater than)
 - `8 ≥ 8` is `true` (greather than or equal to)
-- `5 < 9` is `false` (less than)
+- `9 < 5` is `false` (less than)
 - `3 ≤ 1` is `true` (less than or equal to)
 
 [<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x" alt="Graph">](./graph-2x.webp)

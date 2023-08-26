@@ -40,4 +40,4 @@ I am using the `Transform: Set Parent` node with two inputs: `Parent` and `World
 
 > When non-uniform scaling exists in the hierarchy of a transform, it may not be possible to perfectly maintain its appearance. This is due to how transform matrices are accumulated. 
 
-[<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x" alt="Graph">](./graph.webp)
+[<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x" alt="Graph">](./graph-2x.webp)
