@@ -39,7 +39,7 @@ In the script graph, the `Game Object: Find With Tag` node is used to get a refe
 
 The `Trigger Custom Event` will trigger a `Custom Event` on the *Inventory* that we will add later. It passes itself (`This`) as an argument, and finally disabled itself.
 
-<img src="./item-graph-1x.webp" srcset="./item-graph-1x.webp 1x, ./item-graph-2x.webp 2x" alt="Item Graph">
+[<img src="./item-graph-1x.webp" srcset="./item-graph-1x.webp 1x, ./item-graph-2x.webp 2x" alt="Item Graph">](./item-graph-2x.webp)
 
 ## Item buckets
 
@@ -79,11 +79,11 @@ In addition to the two *Object* variables, we will also need a *Graph* variable 
 
 `On Start` we first get a list of all the `Rect Transform` children of the `inventory` inside the `Canvas`. Then we do a funny thing where we remove the `inventory` because we are only interested in its children: the items. `Get Components In Children` oddly enough includes components on the object itself, so its name is a bit misleading. We then save the list to the `itemSlots` variable and then loop through and disable each item.
 
-<img src="./inventory-graph-1-1x.webp" srcset="./inventory-graph-1-1x.webp 1x, ./inventory-graph-1-2x.webp 2x" alt="Inventory Graph 1">
+[<img src="./inventory-graph-1-1x.webp" srcset="./inventory-graph-1-1x.webp 1x, ./inventory-graph-1-2x.webp 2x" alt="Inventory Graph 1">](./inventory-graph-1-2x.webp)
 
 The next part of the *Inventory* graph are the `Custom Event` nodes that handle adding and removing items. Remember these events are triggered by the items in the world as well as the item buckets. At the end of their flow, they trigger an event called `UpdateItems`, which we will add next.
 
-<img src="./inventory-graph-2-1x.webp" srcset="./inventory-graph-2-1x.webp 1x, ./inventory-graph-2-2x.webp 2x" alt="Inventory Graph 2">
+[<img src="./inventory-graph-2-1x.webp" srcset="./inventory-graph-2-1x.webp 1x, ./inventory-graph-2-2x.webp 2x" alt="Inventory Graph 2">](./inventory-graph-2-2x.webp)
 
 The `Custom Event` called `UpdateItems` initially loops through each item in the `Canvas` and disables it. We do this to start fresh.
 
@@ -91,7 +91,7 @@ Then it uses a `For Loop` to *iterate* through two lists at the same time: `item
 
 The sprite referenced in `inventorySprite` on the world item is then assigned to the `Image` of the item in the inventory and the inventory item is finally enabled. 
 
-<img src="./inventory-graph-3-1x.webp" srcset="./inventory-graph-3-1x.webp 1x, ./inventory-graph-3-2x.webp 2x" alt="Inventory Graph 3">
+[<img src="./inventory-graph-3-1x.webp" srcset="./inventory-graph-3-1x.webp 1x, ./inventory-graph-3-2x.webp 2x" alt="Inventory Graph 3">](./inventory-graph-3-2x.webp)
 
 ---
 
