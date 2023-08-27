@@ -9,6 +9,8 @@ parent: Recipes
 
 ![Demo](./demo.gif)
 
+Download the graph: [PlatformPlayer.asset](./PlatformPlayer.asset)
+
 A player controller for use in platform games. The script is far from production-ready, but should allow you to create some prototypes.
 
 To prevent the player sticking to walls, a `Physics Material` has been assigned with a friction of `0`. So you need separate colliders for the top of the platform and the sides/walls.
@@ -19,4 +21,4 @@ Some of the values in the graph will need to be tweaked to fit your character. F
 
 <img src="./variables-1x.webp" srcset="./variables-1x.webp 1x, ./variables-2x.webp 2x">
 
-<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x">
+[<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x">](./graph-2x.webp)

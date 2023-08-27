@@ -10,3 +10,6 @@ has_children: true
 
 ---
 
+The recipes are not tutorials, but rather solutions or examples to learn from.
+
+If you are completely new, I would recommend you go through the mini project: [A Simple Puzzle Game](../a-simple-puzzle-game/).
