@@ -7,7 +7,7 @@ parent: Recipes
 
 > Using **Unity 2021.3.27f1** and **Visual Scripting 1.8.0**. The project is using the **2D Core** template.
 
-<video autoplay loop muted playsinline>
+<video autoplay loop muted playsinline controls style="width: 100%;">
 	<source src="./demo.mp4" type="video/mp4">
 </video>
 
@@ -50,7 +50,8 @@ In order to calculate the slope direction in accordance with the game controller
 1. Create a vector from the controller input and clamp it to `1.0`.
 2. Rotate the input around the Y-axis to match the camera's view.
 3. Get the ground's normal vector from the raycast.
-4. Calculate a direction along the ground/slope that keeps the XZ-direction but modifies Y. For this, we can use this equation: <br><img src="./equation.svg">
+4. Calculate a direction along the ground/slope that keeps the XZ-direction but modifies Y. For this, we can use this equation: <br><object type="image/svg+xml" data="./equation.svg"></object>
+>
 5. Normalize the direction and use the input magnitude and `moveSpeed` to determine to velocity along the ground.
 
 <img src="./graph-fixed-update-1x.webp" srcset="./graph-fixed-update-1x.webp 1x, ./graph-fixed-update-2x.webp 2x">
