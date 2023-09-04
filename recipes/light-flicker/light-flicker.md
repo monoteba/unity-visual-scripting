@@ -19,4 +19,4 @@ It works by picking a random value every time a timer runs out defined by `minGa
 
 <img src="./variables-1x.webp" srcset="./variables-1x.webp 1x, ./variables-2x.webp 2x">
 
-<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x">
+[<img src="./graph-1x.webp" srcset="./graph-1x.webp 1x, ./graph-2x.webp 2x">](./graph-2x.webp)
