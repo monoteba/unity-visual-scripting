@@ -21,7 +21,7 @@ The `Head` is a child of the `Gun Turret` and should be facing in its local Z di
 
 The `Bullet` should be a child of the `Head` and should also be facing forward - local Z. The bullet has a `Collider` and a `Rigidbody`, since we will let the physics simulation handle the bullet once it is fired. The mass of the bullet is higher than the cubes, to make a bigger impact.
 
-> Note: The rotation of the head is not limited in any way. This means it can potentially shoot straight up or down
+> Note: The rotation of the head is not limited in any way. This means it can potentially shoot straight up or down.
 
 <img src="./scene-1x.webp" srcset="./scene-1x.webp 1x, ./scene-2x.webp 2x">
 
